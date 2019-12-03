@@ -157,7 +157,7 @@ extension EFCounter: EFCount {
         
         let timer = CADisplayLink(target: self, selector: #selector(updateValue(_:)))
         if #available(iOS 10.0, *) {
-            timer.preferredFramesPerSecond = 30
+            timer.preferredFramesPerSecond = 60
         } else {
             timer.frameInterval = 2
         }
